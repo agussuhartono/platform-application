@@ -52,38 +52,6 @@
             "enabled": false
         }
     },
-    "scripts": {
-        "post-install-cmd": [
-            "@build-parameters",
-            "@set-permissions",
-            "@install-assets",
-            "@set-assets-version"
-        ],
-        "post-update-cmd": [
-            "@build-parameters",
-            "@set-permissions",
-            "@update-assets",
-            "@set-assets-version"
-        ],
-        "build-parameters": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
-        ],
-        "set-permissions": [
-            "Oro\\Bundle\\InstallerBundle\\Composer\\ScriptHandler::setPermissions"
-        ],
-        "install-assets": [
-            "Oro\\Bundle\\InstallerBundle\\Composer\\ScriptHandler::installAssets"
-        ],
-        "update-assets": [
-            "Oro\\Bundle\\InstallerBundle\\Composer\\ScriptHandler::updateAssets"
-        ],
-        "set-assets-version": [
-            "Oro\\Bundle\\InstallerBundle\\Composer\\ScriptHandler::setAssetsVersion"
-        ],
-        "set-parameters": [
-            "Oro\\Bundle\\InstallerBundle\\Composer\\ParametersHandler::set"
-        ]
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
